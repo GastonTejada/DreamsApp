@@ -1,0 +1,79 @@
+{
+    {
+      "id": "natacion_infantil",
+      "nombre": "Natación Infantil",
+      "categoria": "Natación",
+      "descripcion": "Clases de natación para niños con instructores especializados.",
+      "imagen": "assets/images/natacion_infantil.png"
+    },
+    {
+      "id": "natacion_adultos",
+      "nombre": "Natación Adultos",
+      "categoria": "Natación",
+      "descripcion": "Entrenamiento de natación para adultos, desde principiantes hasta avanzados.",
+      "imagen": "assets/images/natacion_adulto.png"
+    },
+    {
+      "id": "natacion_bebes",
+      "nombre": "Natación Bebés",
+      "categoria": "Natación",
+      "descripcion": "Clases de natación diseñadas para bebés con acompañamiento de los padres.",
+      "imagen": "assets/images/natacion_bebes.png"
+    },
+    {
+      "id": "gimnasia_agua",
+      "nombre": "Gimnasia en el Agua",
+      "categoria": "Natación",
+      "descripcion": "Ejercicios aeróbicos en el agua para mejorar la resistencia y tonificación muscular.",
+      "imagen": "assets/images/gimnasia_agua.png"
+    },
+    {
+      "id": "crossfit",
+      "nombre": "Crossfit",
+      "categoria": "Entrenamiento Funcional",
+      "descripcion": "Rutinas de alta intensidad con movimientos funcionales y variados.",
+      "imagen": "assets/images/crossfit.png"
+    },
+    {
+      "id": "localizada",
+      "nombre": "Localizada",
+      "categoria": "Fitness",
+      "descripcion": "Ejercicios focalizados en grupos musculares específicos para tonificación.",
+      "imagen": "assets/images/localizada.png"
+    },
+    {
+      "id": "cycle",
+      "nombre": "Cycle",
+      "categoria": "Cardio",
+      "descripcion": "Clases de ciclismo indoor con entrenamientos de alta intensidad.",
+      "imagen": "assets/images/cycle.png"
+    },
+    {
+      "id": "funcional",
+      "nombre": "Funcional Taebo",
+      "categoria": "Entrenamiento Funcional",
+      "descripcion": "Entrenamiento que combina movimientos de artes marciales con ejercicios aeróbicos.",
+      "imagen": "assets/images/funcional_taebo.png"
+    },
+    {
+      "id": "yoga",
+      "nombre": "Yoga",
+      "categoria": "Bienestar",
+      "descripcion": "Práctica que combina posturas, respiración y meditación para mejorar el bienestar.",
+      "imagen": "assets/images/yoga.png"
+    },
+    {
+      "id": "zumba",
+      "nombre": "Zumba",
+      "categoria": "Cardio",
+      "descripcion": "Clases de baile fitness con ritmos latinos para mejorar la condición física.",
+      "imagen": "assets/images/zumba.png"
+    },
+    {
+      "id": "musculacion",
+      "nombre": "Musculación",
+      "categoria": "Fuerza",
+      "descripcion": "Entrenamiento con pesas y máquinas para el desarrollo muscular.",
+      "imagen": "assets/images/musculacion.png"
+    }
+}
