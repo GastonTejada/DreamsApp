@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View, Platform, Alert, Image } from "react-native"
+import { StyleSheet, Text, View, Platform, Alert, Image } from "react-native"
 import React, { useState, useEffect } from "react"
 import { colors } from "../constants/colors"
 import InputForm from "../components/InputForm"
@@ -59,30 +59,28 @@ const LoginScreen = ({ navigation }) => {
                     source={require('../../assets/images/logo.webp')}
                     style={styles.logo}
                 />      
-                {/* <View style={styles.lineUnderLogo} />            */}
             </View>     
             <View style={styles.container}>
                                         
                 <Text style={styles.title}>Inicia sesión</Text>
                 <InputForm
-                    label={"email"}
+                    label={"Email"}
                     onChange={setEmail}
                     error={""}         
                 />
                 <InputForm
-                    label={"password"}
+                    label={"Password"}
                     onChange={setPassword}
                     error={""}
-                    // isSecure={true}
                     isSecure={isPasswordSecure}
                     togglePasswordVisibility={togglePasswordVisibility}
                 />
                 <SubmitButton onPress={onSubmit} title="Enviar" />
-                {/* <Text style={styles.sub}>¿No tienes cuenta?</Text>
-                <Pressable onPress={() => navigation.navigate("Signup")}>
-                    <Text style={styles.subLink}>Registrate</Text>
-                </Pressable> */}
             </View>        
+            <Image 
+                    source={require('../../assets/images/ayj.png')}
+                    style={styles.bottomRightImage}
+                />              
         </View>
     )
 }
@@ -115,7 +113,6 @@ const styles = StyleSheet.create({
         height: 5,
         backgroundColor: '#89B3D9',
         position: 'absolute',
-        // marginTop: '65%',
     },    
     headerTitle: {
       color: colors.black,
@@ -131,8 +128,6 @@ const styles = StyleSheet.create({
         gap: 15,
         paddingVertical: 20,
         borderRadius: 10,
-        // borderColor: colors.board,
-        // borderWidth : 3,       
     },
     title: {
         fontSize: 22,
@@ -148,6 +143,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: colors.red,
     },
+    bottomRightImage: {
+        position: 'absolute',
+        bottom: 20,
+        right: 15,
+        width: 70,
+        height: 70,
+        resizeMode: 'contain',
+      },
 })
 
 //*------------------------------------------------------------------------

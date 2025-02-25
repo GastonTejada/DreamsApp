@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native"
 import React from "react"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import LoginScreen from "../screens/LoginScreen"
-import SignupScreen from "../screens/SignupScreen"
+// import SignupScreen from "../screens/SignupScreen"
 
 const Stack = createNativeStackNavigator()
 
@@ -17,10 +17,10 @@ const AuthStackNavigator = () => {
             <Stack.Screen
                 component={LoginScreen}
                 name="Login" />
-            <Stack.Screen
+            {/* <Stack.Screen
                 component={SignupScreen}
                 name="Signup"
-            />                
+            />                 */}
         </Stack.Navigator>
     )
 }

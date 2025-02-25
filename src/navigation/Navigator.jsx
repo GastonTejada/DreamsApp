@@ -5,19 +5,16 @@ import SplashScreen from '../components/SplashScreen'
 import { NavigationContainer } from '@react-navigation/native'
 import AuthStackNavigator from './AuthStackNavigator'
 import BottomTabNavigator from './BottomTabNavigator'
-import HomeStackNavigator from './HomeStackNavigator'
 import { useSelector, useDispatch } from 'react-redux'
 import { getSession } from '../persistence'
 import { setUser } from '../features/User/userSlice'
-import SingUpScreen from '../screens/SignupScreen'
-import LoginScreen from '../screens/LoginScreen';
-import Home from '../screens/Home';
-import MyProfileStackNavigator from './MyProfileStackNavigator';
 
 const Navigator = () => {
 
   const [loading, setLoading] = useState(true);
   const {user} = useSelector(state => state.auth.value)
+
+
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -30,8 +27,6 @@ const Navigator = () => {
   //   (async ()=> {
   //       try {
   //           const response = await getSession()
-
-  //           console.log(response);          
   //           if (response.rows._array.length) {
   //             const user = response.rows._array[0]
   //             dispatch(setUser({

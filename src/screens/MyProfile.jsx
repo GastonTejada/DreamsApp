@@ -9,6 +9,7 @@ import SubmitButton from "../components/SubmitButton";
 import { useDispatch, useSelector } from "react-redux";
 import { colors } from "../constants/colors";
 import { useGetActivitiesQuery } from "../services/shopService";
+import { clearUser } from "../features/User/userSlice"
 
 const Home = ({ navigation }) => {
   const { data: actividades, error, isLoading } = useGetActivitiesQuery();

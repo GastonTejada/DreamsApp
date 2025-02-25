@@ -8,11 +8,10 @@ import { initSQLiteDB } from "./src/persistence"
 import { colors } from "./src/constants/colors"
 import { useFonts } from "expo-font"
 
-
 // (async ()=> {
 //   try {
-//       if (Platform.OS !== 'web') {          
-//           const response = await initSQLiteDB()
+//       if (Platform.OS !== 'web') {
+//           const response = await initSQLiteDB()                         
 //       }
 //   } catch (error) {    
 //   }

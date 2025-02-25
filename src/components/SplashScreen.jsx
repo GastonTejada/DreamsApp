@@ -1,27 +1,8 @@
 import { StyleSheet, Image, View, Animated, Text, ActivityIndicator } from 'react-native';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { colors } from '../constants/colors';
 
 const SplashScreen = () => {
-  // const imageOpacity = useRef(new Animated.Value(0)).current;
-  // const imageTranslateY = useRef(new Animated.Value(0)).current;
-
-  // useEffect(() => {
-  //   Animated.parallel([
-  //     Animated.timing(imageOpacity, {
-  //       toValue: 1,
-  //       duration: 3000,
-  //       delay: 200,
-  //       useNativeDriver: true,
-  //     }),
-  //     Animated.timing(imageTranslateY, {
-  //       toValue: 0,
-  //       duration: 3000,
-  //       delay: 200,
-  //       useNativeDriver: true,
-  //     }),
-  //   ]).start();
-  // }, []);
 
   return (
     <View style={styles.container}>
@@ -41,6 +22,7 @@ const SplashScreen = () => {
       </View>
     </View>
   );
+
 }
 
 export default SplashScreen;

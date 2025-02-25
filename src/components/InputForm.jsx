@@ -37,7 +37,7 @@ const InputForm = ({
           onChangeText={onChangeText}
           secureTextEntry={isSecure}
         />
-        {(label === 'password' || label === 'confirm password') && (
+        {(label === 'Password' || label === 'Confirm password') && (
           <Pressable onPress={togglePasswordVisibility} style={styles.eyeIcon}>
             <Icon name={isSecure ? "eye-slash" : "eye"} size={20} color={colors.dark} />
           </Pressable>
