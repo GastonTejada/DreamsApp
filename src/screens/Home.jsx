@@ -67,13 +67,8 @@ const Home = ({ route, navigation}) => {
                     data={activities}
                     keyExtractor={(item) => item.id}
                     renderItem={({ item }) => (
-                      // <Card style={styles.card}>
-                      //   <ActivityItem activity={{ ...item, imagen: imageMap[item.id] }} navigation={navigation} />
-                      // </Card>
                       <Card style={styles.card}>
                       <ActivityItem 
-                        // activity={{ ...item, imagen: imageMap[item.id] }} 
-                        // onPress={() => handleNavigate({ ...item, imagen: imageMap[item.id] })} 
                         activity={{ ...item, imagen: imageMap[item.id] }} 
                         navigation={navigation}                        
                       />

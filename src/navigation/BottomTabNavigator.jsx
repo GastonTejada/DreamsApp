@@ -3,10 +3,11 @@ import { StyleSheet, View } from "react-native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import HomeStack from "./HomeStackNavigator"
 import MyProfileStack from "./MyProfileStackNavigator"
+import MyQrCodeStack from "./MyQrCodeStackNavigator"
 import { colors } from "../constants/colors"
 import { SimpleLineIcons } from '@expo/vector-icons';
-import { FontAwesome5,FontAwesome6 } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator()
 
@@ -26,7 +27,7 @@ const BottomTabNavigator = () => {
                     tabBarIcon: ({ focused }) => {
                         return (
                             <View>                                
-                                <SimpleLineIcons name="home" size={24} color={focused ? colors.orangeDreams : "gray" } />
+                                <SimpleLineIcons name="home" size={24} color={focused ? colors.orangeDreams : "gray" } />                                
                                 {focused && <View style={styles.tabBarIndicator} />}
                             </View>
                         )
@@ -34,6 +35,21 @@ const BottomTabNavigator = () => {
                 }}
                 
             />
+            <Tab.Screen 
+                name="My QR"
+                component={MyQrCodeStack}                
+                options={{
+                    headerShown: false , 
+                    tabBarIcon: ({ focused }) => {
+                        return (
+                            <View>                                
+                                <MaterialCommunityIcons name="qrcode-scan" size={24} color={focused ? colors.orangeDreams : "gray" } />
+                                {focused && <View style={styles.tabBarIndicator} />}
+                            </View>
+                        )
+                    },
+                }}
+            />               
             <Tab.Screen 
                 name="My profile"
                 component={MyProfileStack}
